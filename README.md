@@ -4,6 +4,10 @@ INVISYRINTH is a playful physical-digital game developed by Janice, Oriana, and 
 
 The twist is simple: it’s a maze you can’t see. Instead of navigating with your eyes, you navigate with your body and your memory. This “invisible” setup turns a familiar game into an exercise in spatial orientation, attention, and patience. Players slowly build a mental map of the maze by learning from feedback after each step.
 
+## Demo Video
+Click the image to watch the demo on YouTube.
+[![Invisyrinth Demo](https://img.youtube.com/vi/8J3GefgU5Ao/0.jpg)](https://www.youtube.com/watch?v=8J3GefgU5Ao)
+
 ## How to play
 The game is housed in a compact box with an integrated Modulino Movement sensor that tracks directional movement (left, right, forward, backward). Each movement is confirmed through a small screen that provides the essential outcome feedback:
  
