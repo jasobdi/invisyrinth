@@ -29,6 +29,9 @@
 
 ## How to build
 ### Wiring
+* 2 of the LEDs are connected to one cable beacuse of limited space on the board
+* Plug in the UCB-C cables on each of the arduinos, not on the board itself
+
 
 ### Code
 Copy the content of the folder 'src' to your computer and through the Arduino Lab onto your corresponding boards' main.py file (Controller & Maze)
