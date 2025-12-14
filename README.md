@@ -45,6 +45,7 @@ If you would like to build INVISYRINTH yourself, you will need the following sof
 ### Wiring
 * 2 of the LEDs are connected to one cable beacuse of limited space on the board
 * Plug in the UCB-C cables on each of the arduinos, not on the board itself
+<img width="1920" height="1080" alt="wiring" src="https://github.com/user-attachments/assets/446869df-f5a6-458e-ba35-65d5cb131740" />
 
 ### Code
 Copy the content of the folder 'src' to your computer and through the Arduino Lab onto your corresponding boards' main.py file (Controller & Maze)
