@@ -157,7 +157,7 @@ def main():
     draw_maze_on_matrix()
 
     while True:
-        msg = esp.recv()
+        host, msg = esp.recv()
         ## code waits until command from controller received (movement or reset)
         if not msg:
             ## no command: go back to waiting

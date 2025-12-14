@@ -139,7 +139,7 @@ def detect_step() -> bool:
 
 # DIRECTION
 def get_direction_from_tilt():
-    ax, ay = move.accelerometer
+    ax, ay, az = move.accelerometer
 
     row_change = 0
     col_change = 0
@@ -203,6 +203,7 @@ def handle_feedback(status: str):
     ## reset
     if status == "reset_ok":
         leds_off()
+        display.color(0, 0, 255)  # blue
         lcd_message("New run", "Good luck!")
         return
 
@@ -227,7 +228,7 @@ def handle_feedback(status: str):
     ## ok - keep going
     elif parts[0] == "ok":
         leds_off()
-        display.color(0, 0, 255)  # blue
+        display.color(255, 255, 0)  # yellow
         lcd_message("Keep going!", "")
 
     ## unknown (error)
@@ -253,31 +254,35 @@ def handle_buttons():
     blue = btn_blue.value()
     red = btn_red.value()
 
-    ## blue button: only react when transition 1 -> 0 (button pushed just now)
-    if blue == 0 and prev_blue == 1:
-        print("Blue button pressed -> RESET GAME")
+    ## RED BUTTON: only react when transition 1 -> 0 (button pushed just now)
+    ### handles reset
+    if red == 0 and prev_red == 1:
+        print("Red button pressed -> RESET GAME")
         send_reset()
         lcd_message("New run", "Good luck!")
         sleep_ms(300)
 
-    prev_blue = blue
+    prev_red = red
 
-    ## red button: switch game state
-    if red == 0 and prev_red == 1:
-        game_active = not game_active  
+    ## BLUE BUTTON: switch game state
+    ### handles pause / resume
+    if blue == 0 and prev_blue == 1:
+        game_active = not game_active
 
         if game_active:
-            print("Red button pressed -> GAME RESUME")
+            print("Blue button pressed -> GAME RESUME")
             leds_off()
+            display.color(0, 0, 255)  # blue
             lcd_message("Game on", "")
         else:
-            print("Red button pressed -> GAME PAUSE")
+            print("Blue button pressed -> GAME PAUSE")
             leds_off()
+            display.color(0, 0, 255)  # blue
             lcd_message("Game paused", "")
 
         sleep_ms(300)
 
-    prev_red = red
+    prev_blue = blue
 
 # MAIN
 def main():
