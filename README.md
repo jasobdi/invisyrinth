@@ -77,5 +77,3 @@ These give immediate feedback if the player has hit a wall. Use one LED each for
 This is the core input sensor, the logic is split in two parts:
 * Step detection: peak in the acceleration indicates if a step was taken
 * Direction detection: tilt/move direction determines in which direction the player moves
-
-## Video
