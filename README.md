@@ -1,6 +1,6 @@
 # INVISYRINTH
 ## Concept
-INVISYRINTH is a playful physical-digital game developed by Janice, Oriana, and Sam for the Physical Computing course at OST – Ostschweizer Fachhochschule (Rapperswil) as part of the Bachelor in Digital Design. The goal was to create a fun, accessible experience that gets people moving, away from phones and laptops, and into a focused, embodied challenge.
+INVISYRINTH is a playful physical-digital game developed by Janice (https://www.github.com/jasobdi), Oriana, and Sam (https://www.github/samtheman-ux) for the Physical Computing course at OST – Ostschweizer Fachhochschule (Rapperswil) as part of the Bachelor in Digital Design. The goal was to create a fun, accessible experience that gets people moving, away from phones and laptops, and into a focused, embodied challenge.
 
 The twist is simple: it’s a maze you can’t see. Instead of navigating with your eyes, you navigate with your body and your memory. This “invisible” setup turns a familiar game into an exercise in spatial orientation, attention, and patience. Players slowly build a mental map of the maze by learning from feedback after each step.
 
